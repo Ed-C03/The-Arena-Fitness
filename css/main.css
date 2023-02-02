@@ -32,8 +32,8 @@ section.single-hero {
   background-image: none;
   background-origin: padding-box;
   background-position: 50% 50% !important;
-  background-repeat: repeat;
-  background-size: cover !important;
+  background-size: contain!important;
+  background-repeat: no-repeat;
   height: 100%;
   left: 0;
   position: absolute;
@@ -336,7 +336,7 @@ span.arrow-right:after {
 
 .enhanced .background-img {
   position: relative;
-  height: auto;
+  height: 500px;
 }
 .block-enhanced {
   display: flex;
@@ -527,7 +527,7 @@ textarea {
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
   background-color: #04aa6d;
-  color: white;
+  color: white;k
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -545,6 +545,7 @@ input[type="submit"]:hover {
 
   padding: 20px;
 }
+
 
 /*Media queries*/
 
@@ -613,7 +614,7 @@ input[type="submit"]:hover {
     padding: 7em 10em;
   }
   .block-choice .block-caption a {
-    padding: 1em 2em;
+    padding: 1em 2em; 
   }
   .block-box {
     padding: 5em 4em;
@@ -671,6 +672,9 @@ input[type="submit"]:hover {
   textarea {
     appearance: none;
     border-radius: 0;
+  }
+  .main-slider .slides li {
+    height: 600px;
   }
   .mobile-but {
     display: block;
@@ -751,6 +755,9 @@ input[type="submit"]:hover {
     appearance: none;
     border-radius: 0;
   }
+  .main-slider .slides li {
+    height: 500px;
+  }
   .hero-content {
     position: relative;
     top: 50%;
@@ -823,7 +830,9 @@ input[type="submit"]:hover {
     display: block;
   }
   .enhanced .background-img {
-    display: none;
+    display: flex;
+    width: 440px;
+    height:500px;
   }
   .block-box {
     padding: 4em;
@@ -849,6 +858,13 @@ input[type="submit"]:hover {
     appearance: none;
     border-radius: 0;
   }
+  .main-slider .slides li {
+    height: 400px;
+  }
+  .background-img {
+    display: flex;
+    
+  }
   .hero-content {
     position: relative;
     top: 50%;
@@ -921,7 +937,9 @@ input[type="submit"]:hover {
     display: block;
   }
   .enhanced .background-img {
-    display: none;
+    display: flex;
+    width: 330px;
+    height:400px;
   }
   .block-box {
     padding: 4em;
